@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="shortcut icon" href="./favicon.ico">
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 100%; }
-
-body {
-  background-color: black; }
-
-header {
-  background-color: rgba(60, 60, 80, 0.9);
-  height: 100%;
-  color: white; }
-
-.sns {
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.cell {
-  text-decoration: none;
-  width: 100%;
-  background-color: rgba(200, 0, 0, 0.4);
-  padding: 10px 0px;
-  border: solid 2px black; }
-  .cell:hover {
-    background-color: black; }
-
-urlgreen {
-  color: green; }
-
-.content {
-  color: white;
-  background-color: rgba(60, 60, 60, 0.9);
-  height: 100%; }
-  .content p {
-    margin: 20px 0; 
-    }
-
-.title-text {
-  border: solid 4px white;
-  border-radius: 50px;
-  padding: 20px 50px; }
-
-.tag-text {
-  border-bottom: solid;
-  padding: 20px 0px 20px;
-  width: 200px;
-  margin: 0 auto; }
-
-.work {
-  height: 100%;
-  width: 100%;
-  background: #1d2635;
-  color: white; }
-
-.btn {
-  height: 72px;
-  width: 200px;
-  background: #7aacff;
-  text-decoration: none;
-  color: white;
-  margin: 20px ;
-  padding: 5px 0;
-  border-radius: 50%;
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
-  align-items: center; /* 縦方向中央揃え */
-  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
-  justify-content: center; /* 横方向中央揃え */
-}
-
-</style>
+    <title>Lockdef</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-<header>
-  <h1>Welcome mysite.</h1>
-  <h2>@lockdef</h2>
-</header>
-<div class="content">
-  <br><br>
-  <h1><span class="title-text">Profile</span></h1>
-  <h2 class="tag-text" style="padding: 50px 0px 20px;">所属</h2>
-  <p>茨城工業高等専門学校</p>
-  <p>国際創造工学科</p>
-  <p>情報系</p>
-  <p>グローバル系</p>
-  <p>本科2年</p>
-  <h2 class="tag-text">趣味</h2>
-  <p>データサイエンス</p>
-  <p>深層学習</p>
-  <p>webアプリケーション</p>
-  <h2 class="tag-text">言語</h2>
-  <p>Python</p>
-</div>
+<body style="background: rgba(224, 224, 224, 0.5)">
+    <nav class='navbar navbar-expand-lg navbar-dark' style="background-color: rgb(240, 98, 146)">
+        <a href="#" class="navbar-brand">
+            Lockdef
+        </a>
+    </nav>
+    <div class="blockquote text-center" style="padding-top: 20px">
+        <h1 class="mb-0">Pythonist</h1>
+        <p class="mb-0 text-muted">- Web AI DataSciense -</p>
+        <hr>
+        <a href="#"><img src="https://pbs.twimg.com/profile_images/1034414196715184128/zhIVH3ol_400x400.jpg" style="border-radius:50%; border:solid black 1px" alt="Twitter" width="100" height="100"></a>
+        <p class="mb-0" style="padding-top:20px">Name: Lock</p>
+        <p class="mb-0">Age: 16</p>
+        <h2 class="mb-0">Language</h2>
+        <p class="mb-0"><img src="https://www.iconfinder.com/icons/4375050/download/png/128"></p>
+        <h2 class="mb-0">Work</h2>
+        <p>
+            <figure style="display: inline-block">
+                <input type="image" src="./killmebaby.png"" width="128" height="128" style="border-radius:50%; border:solid black 1px" alt="KillmebabyAI" data-toggle="modal" data-target="#killmebabyai">
+                    <img >
+                </input>
 
-<div class="work">
-  <br><br>
-  <h1><span class="title-text">Product</span></h1>
-  <br>
-  <a href="https://killmebabyai.herokuapp.com" class="btn">キルミーベイベーAI</a>
-  <a href="https://pbs.twimg.com/media/D4GsfgaUEAAr9B4?format=jpg&name=small" class="btn"">ガトーショコラ</a>
-</div>
+                <figcaption>KillmebabyAI</figcaption>
+            </figure>
+            <figure style="display: inline-block">
+                <input type="image" src="https://pbs.twimg.com/profile_images/1096637360240906240/je8chMYJ_400x400.png" width="128" height="128" style="border-radius:50%; border:solid black 1px" alt="lock_ai" data-toggle="modal" data-target="#lockai">
+                <figcaption>lock_ai</figcaption>
+            </figure>
+            <figure style="display: inline-block">
+                <input type="image" src="./girl_icon.jpeg" width="128" height="128" style="border-radius:50%; border:solid black 1px" alt="girls_by_ai" data-toggle="modal" data-target="#girls_by_ai">
+                </input>
 
-<footer>
-  <div class="sns">
-    <div style="width: 100%; display: flex;">
-      <a href="https://twitter.com/LockDef" class="cell" style="color: skyblue;">Twitter</a>
-      <a href="https://lockdef.hatenablog.com" class="cell" style="color: lightgreen;">hatenablog</a>
-      <a href="https://github.com/Lockdef" class="cell" style="color: gray;">Github</a>
+                <figcaption>girls by AI</figcaption>
+            </figure>
+        </p>
+        <h2>Link</h2>
+        <p><a href="https://twitter.com/LockDef">Twitter</a> / <a href="https://lockdef.hatenablog.com/">HatenaBlog</a> / <a href="https://github.com/Lockdef">Github</a></p>
     </div>
-  </div>
-</footer>
-</script>
+
+    <div class="modal fade" id="killmebabyai" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">KillMeBabyAI</h5>
+                    <button type='button' class='close' data-dismiss='modal' arai-label='Close'><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-primary">
+                        Custom AI app that tells you which Kill Me Baby character your image resembles.
+                    </div>
+
+                    <a href="https://t.co/mAGA7zipmu">GO!!<img src="./killmebabyai.png"  style="border: 1px solid gray" class="img-responsive" width="100%"></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="lockai" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">lock_ai</h5>
+                    <button type='button' class='close' data-dismiss='modal' arai-label='Close'><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-primary">
+                        AI that copied me.
+                    </div>
+                    <a href="https://twitter.com/lock_ai0">GO!<img src="./lockai.png" class="img-responsive" width="100%"></a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="girls_by_ai" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Girls by AI</h5>
+                    <button type='button' class='close' data-dismiss='modal' arai-label='Close'><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-primary">
+                        Beautiful girl made by AI.
+                    </div>
+                    <img src="./girls.PNG" class="img-responsive" width="100%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
